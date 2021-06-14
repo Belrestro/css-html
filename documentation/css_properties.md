@@ -9,3 +9,8 @@ Navigation
 5. [CSS structure](css_structure.md)
 6. [CSS selectors](css_selectors.md)
 7. CSS properties
+
+
+перелік властивостей
+шрифти
+анімації

@@ -1,4 +1,4 @@
-# CSS Properties cheatsheet
+# CSS-HTML tuition
 
 Navigation
 

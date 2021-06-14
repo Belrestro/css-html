@@ -1,4 +1,4 @@
-# HTML structure cheatsheet
+# HTML Structure cheatsheet
 
 Navigation
 

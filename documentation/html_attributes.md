@@ -1,4 +1,4 @@
-# HTML attributes cheatsheet
+# HTML Attributes cheatsheet
 
 Navigation
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+  <style>
+    div {
+      width: 580px;
+      background: red;
+      margin: 0;
+      padding: 1px;
+      border: 0;
+      box-sizing: content-box;
+      position: relative;
+    }
+
+    div div {
+      width: 200px;
+      height: 140px;
+      background: blue;
+      margin: 10px;
+    }
+    div.relative {
+      position: static;
+      top: 60px;
+      left: 50px;
+      z-index: 0;
+    }
+    .teal {
+      background: teal;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="relative"></div>
+    <div class="teal"></div>
+    <div class="teal"></div>
+    <div class="teal"></div>
+    <div class="teal"></div>
+  </div>
+</body>
+</html>

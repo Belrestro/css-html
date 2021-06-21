@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown menu</title>
+  <style>
+    ul {
+      border-bottom: 1px solid;
+      padding: 0;
+      list-style: none;
+      font-size: 0;
+      display: inline-block;
+    }
+
+    ul li {
+      display: inline-block;
+      padding: 5px 10px;
+      position: relative;
+      background: #34799b;
+      font-size: 16px;
+      font-family: Tahoma;
+    }
+    ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    ul li:hover {
+      background: #458aac
+    }
+    ul li ul {
+      display: none;
+    }
+
+    ul li > ul {
+      min-width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
+    ul li ul + a:after {
+      display: inline-block;
+      margin-right: 5px;
+      content: '▶';
+    }
+
+    ul li ul ul {
+      left: 100%;
+      top: 0;
+    }
+
+    ul li ul li {
+      display: block;
+      white-space: nowrap;
+    }
+
+    ul li:hover > ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <a href="">Menu item 1</a>
+    </li>
+    <li>
+      <ul>
+        <li><a href="">Sub menu item 1</a></li>
+        <li><a href="">Sub menu item 2</a></li>
+        <li>
+          <ul>
+            <li><a href="">Sub-sub menu item 1</a></li>
+            <li><a href="">Sub-sub menu item 2</a></li>
+            <li><a href="">Sub-sub menu item 3</a></li>
+          </ul>
+          <a href="" class="super-menu">Sub menu item 3</a>
+        </li>
+      </ul>
+      <a href="" class="super-menu">Super menu item 2</a>
+    </li>
+    <li>
+      <a href="">Menu item 3</a>
+    </li>
+    <li>
+      <a href="">Menu item 4</a>
+    </li>
+    <li>
+      <ul>
+        <li><a href="">Sub menu item 1</a></li>
+        <li><a href="">Sub menu item 2</a></li>
+        <li><a href="">Sub menu item 3</a></li>
+      </ul>
+      <a href="" class="super-menu">Super menu item 5</a>
+    </li>
+    <li>
+      <a href="">Menu item 6</a>
+    </li>
+  </ul>
+</body>
+</html>

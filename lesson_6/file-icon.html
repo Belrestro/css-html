@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .file {
+      display: inline-block;
+      margin-right: 10px;
+      width: 40px;
+      height: 50px;
+      border: 4px solid black;
+      border-radius: 4px;
+      position: relative;
+    }
+    .file::before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-bottom: 17px solid black;
+      border-right: 17px solid transparent;
+      position: absolute;
+      right: -4px;
+      top: -4px;
+    }
+    .file::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 17px solid white;
+      border-left: 17px solid transparent;
+      position: absolute;
+      right: -4px;
+      top: -4px;
+    }
+    .file span {
+      padding: 0 4px;
+      font-weight: bold;
+      border-radius: 4px;
+      position: absolute;
+      bottom: 5px;
+      left: 6px;
+      text-transform: uppercase;
+      font-family: Arial;
+      font-size: 20px;
+      font-style: normal;
+      color: white;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <i class="file">
+    <span>bin</span>
+  </i>
+  <i class="file">
+    <span>exe</span>
+  </i>
+  <i class="file">
+    <span>png</span>
+  </i>
+</body>
+</html>

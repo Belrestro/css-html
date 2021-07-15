@@ -1,0 +1,76 @@
+@keyframes blinking-text {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes running-pig-left {
+  0% {
+    right: -55px;
+  }
+  50% {
+    right: 50%;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes running-pig-right {
+  0% {
+    left: -55px;
+  }
+  50% {
+    left: 50%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.loader {
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.loader {
+  text-align: center;
+  padding-top: 55px;
+  box-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+
+.loader .loader_text {
+  font-family: Vampiro One;
+  animation: blinking-text 1s ease-in-out infinite;
+}
+.loader img {
+  position: absolute;
+  top:0;
+  right:0;
+  height: 55px;
+  animation: running-pig-left  5s linear infinite;
+}
+.loader.left img {
+  transform: rotateY(180deg);
+  animation: running-pig-right  5s linear infinite;
+}
